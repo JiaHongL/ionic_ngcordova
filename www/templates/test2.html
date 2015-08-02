@@ -1,0 +1,18 @@
+<ion-view view-title="Camera">
+    <ion-content>
+      <div class="card">
+            <div class="item item-divider text-center">
+              Take a picture
+            </div>
+            <div class="item item-text-wrap text-center">
+              <img ng-if="imgURI !== undefined" ng-src="{{imgURI}}">
+              <img ng-if="imgURI === undefined" ng-src="http://placehold.it/300x300">
+            </div>  
+            <div class="item item-text-wrap text-center">  
+              <button class="button button-dark button-positive" ng-click="takePicture()">
+                <i class="icon  ion-camera"></i>
+              </button>
+            </div>
+      </div>
+    </ion-content>
+</ion-view>

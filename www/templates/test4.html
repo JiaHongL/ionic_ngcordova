@@ -1,0 +1,23 @@
+<ion-view view-title="Dialogs">
+  <ion-content>
+    <div class="card">
+	    <div class="item item-divider text-center">
+	       show a Dialogs
+	    </div>
+	    <div class="item item-body text-center">
+		    <button class="button button-block button-outline button-calm " ng-click="showdilogs1()">
+		                OK
+		    </button>
+		</div>
+		<div class="item item-body text-center">
+		    <button class="button  button-block button-outline button-energized" ng-click="showdilogs2()">
+		                {{d2||'Cancel or OK'}}
+		    </button>
+   		</div>
+   		<div class="item item-body text-center">
+		    <button class="button  button-block button-outline button-positive" ng-click="showdilogs3()">
+		                {{d3||'Cancel or input'}}
+		     </button>
+     	</div>
+  </ion-content>
+</ion-view>
